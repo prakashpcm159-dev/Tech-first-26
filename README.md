@@ -208,3 +208,6 @@ This project is created for educational and event website development purposes.
 ### 🚀 TECHFEST 2026
 
 **Innovate • Build • Connect • Inspire**
+
+
+Vercel URL-https://techfirst26.vercel.app
