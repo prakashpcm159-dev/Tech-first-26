@@ -1,4 +1,4 @@
-/* Responsive CSS */
+
 @media (max-width: 900px) {
   .container {
     width: min(94%, 760px)

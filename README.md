@@ -18,7 +18,7 @@ The website is designed to be:
 
 | Page | Description |
 |---|---|
-| `home.html` | Main landing page and event overview |
+| `index.html` | Main landing page and event overview |
 | `about.html` | Information about TECHFEST 2026 |
 | `tiket.html` | Ticket and pass information |
 | `venu.html` | Event venue and location information |
@@ -42,7 +42,7 @@ The website is designed to be:
 ```text
 TECHFEST-2026/
 │
-├── home.html
+├── index.html
 ├── about.html
 ├── tiket.html
 ├── venu.html
