@@ -1,0 +1,103 @@
+/* Responsive CSS */
+@media (max-width: 900px) {
+  .container {
+    width: min(94%, 760px)
+  }
+
+  .hero-content {
+    padding: 65px 0
+  }
+
+  .venue,
+  .grid-2 {
+    grid-template-columns: 1fr
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .choices {
+    grid-template-columns: 1fr
+  }
+
+  .links {
+    display: none
+  }
+
+  .menu {
+    display: block;
+    color: #59e4ff
+  }
+
+  .mobile-only {
+    display: block
+  }
+
+  .nav-inner {
+    flex-wrap: wrap
+  }
+
+  .mobile-nav {
+    display: none;
+    width: 100%;
+    padding: 0 4% 18px;
+    gap: 8px
+  }
+
+  .mobile-toggle:checked~.mobile-nav {
+    display: grid
+  }
+
+  .mobile-nav a {
+    padding: 11px;
+    border-radius: 10px;
+    background: #0b1c2d
+  }
+}
+
+@media (max-width:600px) {
+  .hero {
+    min-height: 610px
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: -2px
+  }
+
+  .hero p {
+    font-size: 16px
+  }
+
+  .actions .btn {
+    width: 100%;
+    justify-content: center
+  }
+
+  .section {
+    padding: 65px 0
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr
+  }
+
+  .feature-img {
+    height: 250px
+  }
+
+  .section-head {
+    display: block
+  }
+
+  .section h2 {
+    font-size: 31px
+  }
+}
