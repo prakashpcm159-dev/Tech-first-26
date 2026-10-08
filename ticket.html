@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +16,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
 
     <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Responsive.css">
 </head>
 
-<body>
+<body class="min-w-[320px] bg-[#07111f] text-[#eef6ff] font-sans leading-[1.6]">
 
     <!-- ================= NAVBAR ================= -->
 
-    <header class="nav">
+    <header class="nav sticky top-0 z-[100] bg-[#07111f]/95 backdrop-blur-[15px] border-b border-[#19314d]">
 
-        <div class="container nav-inner">
+        <div class="container nav-inner w-[92%] max-w-[1180px] mx-auto min-h-[76px] flex items-center justify-between relative">
 
-            <a class="logo" href="index.html">
+            <a class="logo text-2xl font-extrabold" href="index.html">
                 TECH<span>FEST</span> 26
             </a>
 
             <!-- Mobile Menu -->
-            <input class="mobile-toggle" id="nav" type="checkbox">
+            <input class="mobile-toggle hidden" id="nav" type="checkbox">
 
-            <label class="menu mobile-only" for="nav" aria-label="Open navigation menu">
+            <label class="menu mobile-only hidden" for="nav" aria-label="Open navigation menu">
 
                 <i class="fa-solid fa-bars" aria-hidden="true">
                 </i>
@@ -44,7 +45,7 @@
             </label>
 
             <!-- Navigation -->
-            <nav class="links mobile-nav" aria-label="Main navigation">
+            <nav class="links mobile-nav flex items-center gap-2" aria-label="Main navigation">
 
                 <a href="index.html">
                     Home
@@ -83,22 +84,22 @@
 
         <!-- ================= PAGE HEADER ================= -->
 
-        <header class="page-head">
+        <header class="page-head py-[90px] pb-[45px] bg-gradient-to-b from-[#0b2035] to-[#07111f]">
 
-            <div class="container">
+            <div class="container w-[92%] max-w-[1180px] mx-auto">
 
-                <p class="eyebrow">
+                <p class="eyebrow inline-flex px-[13px] py-2 border border-[#24516d] bg-[#0c2438] rounded-full text-[#61e5ff] text-[13px] font-bold">
                     PASSES &amp; TICKETS
                 </p>
 
                 <h1>
                     Choose your
-                    <span class="gradient">
+                    <span class="gradient bg-gradient-to-r from-white to-[#55e7ff] bg-clip-text text-transparent">
                         pass.
                     </span>
                 </h1>
 
-                <p class="muted">
+                <p class="muted text-[#91a8bd]">
                     Simple passes for every kind of
                     TechFest participant.
                 </p>
@@ -110,15 +111,15 @@
 
         <!-- ================= TICKETS ================= -->
 
-        <section class="section" aria-labelledby="ticket-title">
+        <section class="section py-[90px]" aria-labelledby="ticket-title">
 
-            <div class="container">
+            <div class="container w-[92%] max-w-[1180px] mx-auto">
 
-                <div class="section-head">
+                <div class="section-head flex justify-between items-end gap-5 mb-9">
 
                     <div>
 
-                        <p class="eyebrow">
+                        <p class="eyebrow inline-flex px-[13px] py-2 border border-[#24516d] bg-[#0c2438] rounded-full text-[#61e5ff] text-[13px] font-bold">
                             PRICING
                         </p>
 
@@ -128,20 +129,20 @@
 
                     </div>
 
-                    <p class="muted">
+                    <p class="muted text-[#91a8bd]">
                         All passes include festival access.
                     </p>
 
                 </div>
 
 
-                <div class="grid grid-3">
+                <div class="grid grid-3 grid gap-5 grid-cols-3">
 
                     <!-- ================= STUDENT ================= -->
 
-                    <article class="card ticket">
+                    <article class="card ticket p-[26px] bg-gradient-to-br from-[#0d1d30] to-[#091827] border border-[#1b344c] rounded-[20px] shadow-[0_15px_50px_#00000022] transition duration-300 hover:border-[#28708c] hover:-translate-y-[3px] relative overflow-hidden">
 
-                        <div class="icon">
+                        <div class="icon w-12 h-12 mb-[18px] grid place-items-center bg-[#0b3145] rounded-[14px] text-[#50e1ff] text-[21px]">
 
                             <i class="fa-solid fa-user-graduate" aria-hidden="true">
                             </i>
@@ -156,7 +157,7 @@
                             ₹199
                         </p>
 
-                        <p class="muted">
+                        <p class="muted text-[#91a8bd]">
                             Perfect for students who want
                             to explore the festival.
                         </p>
@@ -183,7 +184,7 @@
 
                         </ul>
 
-                        <a class="btn btn-secondary ticket-btn" href="register.html">
+                        <a class="btn btn-secondary ticket-btn inline-flex items-center justify-center gap-[9px] px-[19px] py-[13px] border border-[#25455f] rounded-xl font-bold transition duration-300 hover:-translate-y-0.5 bg-[#0c1d30] hover:bg-[#12304a]" href="register.html">
 
                             Choose Student
 
@@ -197,13 +198,13 @@
 
                     <!-- ================= PRO ================= -->
 
-                    <article class="card ticket popular" aria-label="Popular ticket plan">
+                    <article class="card ticket popular p-[26px] bg-gradient-to-br from-[#0d1d30] to-[#091827] border border-[#1b344c] rounded-[20px] shadow-[0_15px_50px_#00000022] transition duration-300 hover:border-[#28708c] hover:-translate-y-[3px] relative overflow-hidden border-[#2bd8ff] shadow-[0_0_0_1px_#2bd8ff33,0_20px_70px_#00bde91c]" aria-label="Popular ticket plan">
 
-                        <span class="tag">
+                        <span class="tag absolute top-[18px] right-[18px] px-2.5 py-1.5 bg-[#21d5fa] text-[#04111a] rounded-full text-[11px] font-extrabold">
                             POPULAR
                         </span>
 
-                        <div class="icon">
+                        <div class="icon w-12 h-12 mb-[18px] grid place-items-center bg-[#0b3145] rounded-[14px] text-[#50e1ff] text-[21px]">
 
                             <i class="fa-solid fa-rocket" aria-hidden="true">
                             </i>
@@ -218,7 +219,7 @@
                             ₹399
                         </p>
 
-                        <p class="muted">
+                        <p class="muted text-[#91a8bd]">
                             Best for participants who want
                             the complete experience.
                         </p>
@@ -245,7 +246,7 @@
 
                         </ul>
 
-                        <a class="btn btn-primary ticket-btn" href="register.html">
+                        <a class="btn btn-primary ticket-btn inline-flex items-center justify-center gap-[9px] px-[19px] py-[13px] border border-[#25455f] rounded-xl font-bold transition duration-300 hover:-translate-y-0.5 bg-[#21d5fa] text-[#03101a] border-[#21d5fa] hover:bg-[#55e2ff]" href="register.html">
 
                             Choose Pro
 
@@ -259,9 +260,9 @@
 
                     <!-- ================= TEAM ================= -->
 
-                    <article class="card ticket">
+                    <article class="card ticket p-[26px] bg-gradient-to-br from-[#0d1d30] to-[#091827] border border-[#1b344c] rounded-[20px] shadow-[0_15px_50px_#00000022] transition duration-300 hover:border-[#28708c] hover:-translate-y-[3px] relative overflow-hidden">
 
-                        <div class="icon">
+                        <div class="icon w-12 h-12 mb-[18px] grid place-items-center bg-[#0b3145] rounded-[14px] text-[#50e1ff] text-[21px]">
 
                             <i class="fa-solid fa-people-group" aria-hidden="true">
                             </i>
@@ -276,7 +277,7 @@
                             ₹899
                         </p>
 
-                        <p class="muted">
+                        <p class="muted text-[#91a8bd]">
                             Great for teams ready to compete
                             and build together.
                         </p>
@@ -303,7 +304,7 @@
 
                         </ul>
 
-                        <a class="btn btn-secondary ticket-btn" href="register.html">
+                        <a class="btn btn-secondary ticket-btn inline-flex items-center justify-center gap-[9px] px-[19px] py-[13px] border border-[#25455f] rounded-xl font-bold transition duration-300 hover:-translate-y-0.5 bg-[#0c1d30] hover:bg-[#12304a]" href="register.html">
 
                             Choose Team
 
@@ -323,13 +324,13 @@
 
         <!-- ================= NOTE ================= -->
 
-        <section class="section" aria-labelledby="ticket-note-title">
+        <section class="section py-[90px]" aria-labelledby="ticket-note-title">
 
-            <div class="container">
+            <div class="container w-[92%] max-w-[1180px] mx-auto">
 
-                <article class="card">
+                <article class="card p-[26px] bg-gradient-to-br from-[#0d1d30] to-[#091827] border border-[#1b344c] rounded-[20px] shadow-[0_15px_50px_#00000022] transition duration-300 hover:border-[#28708c] hover:-translate-y-[3px]">
 
-                    <p class="eyebrow">
+                    <p class="eyebrow inline-flex px-[13px] py-2 border border-[#24516d] bg-[#0c2438] rounded-full text-[#61e5ff] text-[13px] font-bold">
                         IMPORTANT
                     </p>
 
@@ -337,16 +338,16 @@
                         Before you register
                     </h2>
 
-                    <p class="muted about-text">
+                    <p class="muted about-text text-[#91a8bd] my-[18px]">
                         Select your preferred ticket and
                         complete the registration form.
                         Ticket confirmation details will be
                         provided after registration.
                     </p>
 
-                    <div class="actions">
+                    <div class="actions flex flex-wrap gap-[14px] mt-8">
 
-                        <a class="btn btn-primary" href="register.html">
+                        <a class="btn btn-primary inline-flex items-center justify-center gap-[9px] px-[19px] py-[13px] border border-[#25455f] rounded-xl font-bold transition duration-300 hover:-translate-y-0.5 bg-[#21d5fa] text-[#03101a] border-[#21d5fa] hover:bg-[#55e2ff]" href="register.html">
 
                             Register Now
 
@@ -355,7 +356,7 @@
 
                         </a>
 
-                        <a class="btn btn-secondary" href="venue.html">
+                        <a class="btn btn-secondary inline-flex items-center justify-center gap-[9px] px-[19px] py-[13px] border border-[#25455f] rounded-xl font-bold transition duration-300 hover:-translate-y-0.5 bg-[#0c1d30] hover:bg-[#12304a]" href="venue.html">
 
                             View Venue
 
@@ -374,9 +375,9 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class="footer">
+    <footer class="footer py-10 border-t border-[#1a3147]">
 
-        <div class="container footer-inner">
+        <div class="container footer-inner w-[92%] max-w-[1180px] mx-auto flex justify-between gap-5">
 
             <div>
 
@@ -390,7 +391,7 @@
 
             </div>
 
-            <div class="footer-right">
+            <div class="footer-right text-right">
 
                 <p>
                     &copy; 2026 TechFest.
