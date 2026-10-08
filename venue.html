@@ -1,72 +1,388 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TechFest 2026 | Venue</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="TechFest 2026 venue information and location in Jaipur, Rajasthan.">
+
+    <title>Venue | TechFest 26</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Responsive.css">
 </head>
 
 <body>
+
+    <!-- ================= NAVBAR ================= -->
     <header class="nav">
-        <div class="container nav-inner"><a class="logo" href="index.html">TECH<span>FEST</span> 26</a><label
-                class="menu mobile-only" for="nav"><i class="fa-solid fa-bars"></i></label><input id="nav"
-                class="mobile-toggle" type="checkbox" hidden>
-            <nav class="links">
+        <div class="container nav-inner">
+
+            <a class="logo" href="index.html">
+                TECH<span>FEST</span> 26
+            </a>
+
+            <input class="mobile-toggle" id="nav" type="checkbox">
+
+            <label class="menu mobile-only" for="nav" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <nav class="links mobile-nav" aria-label="Main navigation">
+
                 <a href="index.html">Home</a>
+
                 <a href="about.html">About</a>
+
                 <a href="ticket.html">Tickets</a>
-                <a class="active" href="venue.html">Venue</a>
+
+                <a href="venue.html" class="active" aria-current="page">
+                    Venue
+                </a>
+
                 <a href="sponsors.html">Sponsors</a>
+
                 <a href="register.html">Register</a>
+
             </nav>
+
         </div>
     </header>
-    <section class="page-head">
-        <div class="container">
-            <span class="eyebrow">VENUE</span>
-            <h1>JECC, Sitapura, Jaipur.</h1>
-            <p class="muted">A modern event destination built for large-scale conferences and technology experiences.
-            </p>
-        </div>
-    </section>
+
+
+    <!-- ================= MAIN ================= -->
     <main>
-        <section class="section">
-            <div class="container venue">
-                <div>
-                    <img class="feature-img" src="images/venue.svg" alt="JECC venue illustration">
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h2>Jaipur Exhibition & Convention Centre</h2>
-                    <p class="muted" style="margin:15px 0">Sitapura Industrial Area, Jaipur, Rajasthan.</p>
-                    <div class="notice"><i class="fa-regular fa-calendar"></i> 15–17 November 2026</div>
-                </div>
+
+        <!-- PAGE HEADER -->
+        <header class="page-head">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    EVENT VENUE
+                </p>
+
+                <h1>
+                    Meet us in
+                    <span class="gradient">Jaipur.</span>
+                </h1>
+
+                <p class="muted">
+                    A modern venue for three exciting days of
+                    technology, creativity and innovation.
+                </p>
+
             </div>
+
+        </header>
+
+
+        <!-- ================= VENUE ================= -->
+        <section class="section" aria-labelledby="venue-title">
+
+            <div class="container venue">
+
+                <!-- Venue Details -->
+                <article class="card">
+
+                    <img class="feature-img" src="images/venue.svg" alt="TechFest 2026 venue illustration">
+
+                    <p class="eyebrow">
+                        <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        EVENT LOCATION
+                    </p>
+
+                    <h2 id="venue-title">
+                        TechFest Arena
+                    </h2>
+
+                    <p class="muted venue-text">
+                        Jaipur, Rajasthan, India
+                    </p>
+
+                    <p class="muted">
+                        TechFest Arena is the central location for
+                        workshops, talks, competitions and networking.
+                        The venue provides comfortable spaces for
+                        students, creators and technology enthusiasts.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn btn-primary" href="register.html">
+                            Register Now
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="btn btn-secondary" href="ticket.html">
+                            View Tickets
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAP -->
+                <div>
+
+                    <iframe class="map" title="Google map showing Jaipur Rajasthan"
+                        src="https://www.google.com/maps?q=Jaipur%20Rajasthan&output=embed" loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
         </section>
-        <section class="section">
-            <div class="container"><iframe class="map"
-                    src="https://www.google.com/maps?q=Jaipur%20Exhibition%20and%20Convention%20Centre&output=embed"
-                    title="JECC map"></iframe></div>
+
+
+        <!-- ================= VENUE HIGHLIGHTS ================= -->
+        <section class="section" aria-labelledby="highlights-title">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            VENUE HIGHLIGHTS
+                        </p>
+
+                        <h2 id="highlights-title">
+                            Everything in one place.
+                        </h2>
+
+                    </div>
+
+                    <p class="muted">
+                        Built for learning, competition and
+                        collaboration.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-3">
+
+                    <!-- Main Stage -->
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-microphone" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3>
+                            Main Stage
+                        </h3>
+
+                        <p class="muted">
+                            Experience inspiring keynotes, expert
+                            talks and technology sessions.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Workshop Zone -->
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3>
+                            Workshop Zone
+                        </h3>
+
+                        <p class="muted">
+                            Learn practical skills through
+                            hands-on technology workshops.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Community Area -->
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-users" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3>
+                            Community Area
+                        </h3>
+
+                        <p class="muted">
+                            Connect with students, mentors,
+                            developers and event partners.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- ================= TRAVEL INFO ================= -->
+        <section class="section" aria-labelledby="travel-title">
+
+            <div class="container">
+
+                <div class="grid grid-3">
+
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <p class="muted">
+                            Jaipur, Rajasthan, India
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-calendar-days" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3 id="travel-title">
+                            Event Dates
+                        </h3>
+
+                        <p class="muted">
+                            14–16 November 2026
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-clock" aria-hidden="true">
+                            </i>
+                        </div>
+
+                        <h3>
+                            Event Hours
+                        </h3>
+
+                        <p class="muted">
+                            Full-day technology sessions
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="section" aria-labelledby="cta-title">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        JOIN TECHFEST 26
+                    </p>
+
+                    <h2 id="cta-title">
+                        Ready to be there?
+                    </h2>
+
+                    <p class="muted venue-text">
+                        Choose your pass and register today.
+                        We are waiting to welcome you at TechFest 26.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn btn-primary" href="register.html">
+                            Register Now
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+                        </a>
+
+                        <a class="btn btn-secondary" href="index.html">
+                            Back to Home
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer class="border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-5">
-      <div>
-        <h2 class="text-2xl font-black text-cyan-400">TechFest26</h2>
-        <p class="text-slate-500 mt-2">Build. Learn. Connect. Innovate.</p>
-      </div>
-      <div class="text-slate-500 text-sm md:text-right">
-        <p>© 2026 TechFest. All rights reserved.</p>
-        <p class="mt-2">Jaipur, Rajasthan, India</p>
-      </div>
-    </div>
-  </footer>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <h2>
+                    TechFest26
+                </h2>
+
+                <p>
+                    Build. Learn. Connect. Innovate.
+                </p>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    &copy; 2026 TechFest.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Jaipur, Rajasthan, India
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

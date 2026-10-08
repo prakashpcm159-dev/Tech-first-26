@@ -1,94 +1,480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TechFest 2026 | Sponsors</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="TechFest 2026 sponsors and technology partners.">
+
+    <title>Sponsors | TechFest 26</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Responsive.css">
 </head>
 
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <header class="nav">
-        <div class="container nav-inner"><a class="logo" href="index.html">TECH<span>FEST</span> 26</a><label
-                class="menu mobile-only" for="nav"><i class="fa-solid fa-bars"></i></label><input id="nav"
-                class="mobile-toggle" type="checkbox" hidden>
-            <nav class="links">
+
+        <div class="container nav-inner">
+
+            <a class="logo" href="index.html">
+                TECH<span>FEST</span> 26
+            </a>
+
+            <input class="mobile-toggle" id="nav" type="checkbox">
+
+            <label class="menu mobile-only" for="nav" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <nav class="links mobile-nav" aria-label="Main navigation">
+
                 <a href="index.html">Home</a>
+
                 <a href="about.html">About</a>
+
                 <a href="ticket.html">Tickets</a>
+
                 <a href="venue.html">Venue</a>
-                <a class="active" href="sponsors.html">Sponsors</a>
+
+                <a href="sponsors.html" class="active" aria-current="page">
+                    Sponsors
+                </a>
+
                 <a href="register.html">Register</a>
+
             </nav>
+
         </div>
+
     </header>
-    <section class="page-head">
-        <div class="container"><span class="eyebrow">OUR PARTNERS</span>
-            <h1>Built with industry support.</h1>
-            <p class="muted">Meet the technology brands supporting TechFest 2026.</p>
-        </div>
-    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
     <main>
-        <section class="section">
-            <div class="container grid grid-4">
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-brands fa-google"></i></div>
-                    <div class="brand">Google</div>
-                    <p class="muted">Technology Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-brands fa-microsoft"></i></div>
-                    <div class="brand">Microsoft</div>
-                    <p class="muted">Cloud Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-brands fa-aws"></i></div>
-                    <div class="brand">Amazon</div>
-                    <p class="muted">Innovation Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-solid fa-cube"></i></div>
-                    <div class="brand">IBM</div>
-                    <p class="muted">AI Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-solid fa-pen-nib"></i></div>
-                    <div class="brand">Adobe</div>
-                    <p class="muted">Creative Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-brands fa-github"></i></div>
-                    <div class="brand">GitHub</div>
-                    <p class="muted">Developer Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-solid fa-database"></i></div>
-                    <div class="brand">Oracle</div>
-                    <p class="muted">Data Partner</p>
-                </div>
-                <div class="card sponsor">
-                    <div class="icon" style="margin:0 auto"><i class="fa-solid fa-laptop"></i></div>
-                    <div class="brand">Dell</div>
-                    <p class="muted">Hardware Partner</p>
-                </div>
+
+        <!-- HERO -->
+
+        <header class="page-head">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+
+                    OUR PARTNERS
+                </p>
+
+                <h1>
+                    Powered by
+                    <span class="gradient">Innovation.</span>
+                </h1>
+
+                <p class="muted">
+                    Meet the brands and technology partners
+                    supporting the next generation of creators.
+                </p>
+
             </div>
+
+        </header>
+
+
+        <!-- FEATURED PARTNERS -->
+
+        <section class="section" aria-labelledby="featured-title">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            FEATURED PARTNERS
+                        </p>
+
+                        <h2 id="featured-title">
+                            Our technology ecosystem
+                        </h2>
+
+                    </div>
+
+                    <p class="muted">
+                        Together we build a better future.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-3">
+
+
+                    <!-- Sponsor 1 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80"
+                            alt="TechNova technology partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            TechNova
+                        </h3>
+
+                        <p class="muted">
+                            Technology Partner
+                        </p>
+
+                    </article>
+
+
+                    <!-- Sponsor 2 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80"
+                            alt="CloudCore cloud technology partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            CloudCore
+                        </h3>
+
+                        <p class="muted">
+                            Cloud Partner
+                        </p>
+
+                    </article>
+
+
+                    <!-- Sponsor 3 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://placehold.co/500x300/0f172a/38bdf8?text=AI+Labs"
+                            alt="AI Labs artificial intelligence partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            AI Labs
+                        </h3>
+
+                        <p class="muted">
+                            AI Innovation Partner
+                        </p>
+
+                    </article>
+
+
+                    <!-- Sponsor 4 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80"
+                            alt="CodeCraft developer partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            CodeCraft
+                        </h3>
+
+                        <p class="muted">
+                            Developer Partner
+                        </p>
+
+                    </article>
+
+
+                    <!-- Sponsor 5 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80"
+                            alt="NetWorks networking partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            NetWorks
+                        </h3>
+
+                        <p class="muted">
+                            Networking Partner
+                        </p>
+
+                    </article>
+
+
+                    <!-- Sponsor 6 -->
+
+                    <article class="card sponsor">
+
+                        <img class="feature-img sponsor-image"
+                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80"
+                            alt="InnovateX innovation partner logo">
+
+                        <div class="icon sponsor-icon">
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>
+                            InnovateX
+                        </h3>
+
+                        <p class="muted">
+                            Innovation Partner
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- SPONSOR BANNER -->
+
+        <section class="section" aria-labelledby="banner-title">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <img class="feature-img"
+                        src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80"
+                        alt="TechFest 2026 technology sponsors banner">
+
+                    <div class="section-head">
+
+                        <div>
+
+                            <p class="eyebrow">
+                                POWERING THE FUTURE
+                            </p>
+
+                            <h2 id="banner-title">
+                                Innovation starts with collaboration.
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <p class="muted">
+                        Our sponsors and partners help students
+                        explore technology, build new ideas and
+                        connect with the technology community.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARTNER BENEFITS -->
+
+        <section class="section" aria-labelledby="benefits-title">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            PARTNERSHIP
+                        </p>
+
+                        <h2 id="benefits-title">
+                            Why partner with TechFest?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="grid grid-3">
+
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h3>
+                            Student Reach
+                        </h3>
+
+                        <p class="muted">
+                            Connect with students, developers
+                            and technology enthusiasts.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h3>
+                            Brand Visibility
+                        </h3>
+
+                        <p class="muted">
+                            Showcase your organization to an
+                            engaged technology audience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h3>
+                            Innovation
+                        </h3>
+
+                        <p class="muted">
+                            Support student creativity and
+                            future technology leaders.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="section" aria-labelledby="cta-title">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        TECHFEST 26
+                    </p>
+
+                    <h2 id="cta-title">
+                        Let's build the future together.
+                    </h2>
+
+                    <p class="muted venue-text">
+                        Join the TechFest community and be a part
+                        of the next generation of technology.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn btn-primary" href="register.html">
+                            Register Now
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="btn btn-secondary" href="index.html">
+                            Back to Home
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
-     <footer class="border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-5">
-      <div>
-        <h2 class="text-2xl font-black text-cyan-400">TechFest26</h2>
-        <p class="text-slate-500 mt-2">Build. Learn. Connect. Innovate.</p>
-      </div>
-      <div class="text-slate-500 text-sm md:text-right">
-        <p>© 2026 TechFest. All rights reserved.</p>
-        <p class="mt-2">Jaipur, Rajasthan, India</p>
-      </div>
-    </div>
-  </footer>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <h2>
+                    TechFest26
+                </h2>
+
+                <p>
+                    Build. Learn. Connect. Innovate.
+                </p>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    &copy; 2026 TechFest.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Jaipur, Rajasthan, India
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

@@ -1,88 +1,368 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TechFest 2026 | About</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn more about TechFest 2026, a college technology festival focused on innovation, learning and collaboration.">
+
+    <title>About | TechFest 26</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/Responsive.css">
 </head>
 
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <header class="nav">
-        <div class="container nav-inner"><a class="logo" href="index.html">TECH<span>FEST</span> 26</a><label
-                class="menu mobile-only" for="nav"><i class="fa-solid fa-bars"></i></label><input id="nav"
-                class="mobile-toggle" type="checkbox" hidden>
-            <nav class="links">
-                <a href="index.html">Home</a>
-                <a class="active" href="about.html">About</a>
-                <a href="ticket.html">Tickets</a>
-                <a href="venue.html">Venue</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="register.html">Register</a>
+
+        <div class="container nav-inner">
+
+            <a class="logo" href="index.html">
+                TECH<span>FEST</span> 26
+            </a>
+
+            <!-- Mobile Menu -->
+            <input class="mobile-toggle" id="nav" type="checkbox">
+
+            <label class="menu mobile-only" for="nav" aria-label="Open navigation menu">
+
+                <i class="fa-solid fa-bars" aria-hidden="true">
+                </i>
+
+            </label>
+
+            <!-- Navigation -->
+            <nav class="links mobile-nav" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html" class="active" aria-current="page">
+                    About
+                </a>
+
+                <a href="ticket.html">
+                    Tickets
+                </a>
+
+                <a href="venue.html">
+                    Venue
+                </a>
+
+                <a href="sponsors.html">
+                    Sponsors
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
             </nav>
+
         </div>
+
     </header>
-    <section class="page-head">
-        <div class="container"><span class="eyebrow">ABOUT THE EVENT</span>
-            <h1>Where technology meets possibility.</h1>
-            <p class="muted">TechFest 2026 brings together curious minds, builders and technology communities for three
-                days in Jaipur.</p>
-        </div>
-    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
     <main>
-        <section class="section">
-            <div class="container grid grid-2">
-                <div><img class="feature-img" src="images/about.svg" alt="Technology illustration"></div>
-                <div class="card">
-                    <h2>More than a conference.</h2>
-                    <p class="muted" style="margin:18px 0">From keynotes and hands-on workshops to networking and demos,
-                        every part of TechFest is designed to help you learn, collaborate and create.</p>
-                    <div class="notice">15–17 November 2026 · JECC, Sitapura, Jaipur</div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <header class="page-head">
+
             <div class="container">
-                <div class="grid grid-4">
-                    <div class="card">
-                        <div class="icon"><i class="fa-solid fa-code"></i></div>
-                        <h3>Hands-on</h3>
-                        <p class="muted">Learn by building with practical sessions.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
-                        <h3>Community</h3>
-                        <p class="muted">Exchange ideas with a diverse tech audience.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Industry</h3>
-                        <p class="muted">Discover current tools and technology trends.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                        <h3>Inspiration</h3>
-                        <p class="muted">Leave with ideas worth turning into action.</p>
-                    </div>
+
+                <p class="eyebrow">
+                    ABOUT THE FEST
+                </p>
+
+                <h1>
+                    Where ideas become
+                    <span class="gradient">
+                        impact.
+                    </span>
+                </h1>
+
+                <p class="muted">
+                    A student-focused technology festival
+                    built around learning, making and
+                    collaboration.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="section" aria-labelledby="about-title">
+
+            <div class="container grid grid-2">
+
+                <!-- Image -->
+
+                <div>
+
+                    <img class="feature-img" src="images/about.svg"
+                        alt="Abstract illustration representing technology, creativity and collaboration">
+
                 </div>
+
+
+                <!-- Content -->
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        OUR STORY
+                    </p>
+
+                    <h2 id="about-title">
+                        What is TechFest 26?
+                    </h2>
+
+                    <p class="muted about-text">
+                        TechFest 26 is a college technology
+                        festival created to bring students,
+                        developers, creators and technology
+                        enthusiasts together.
+                    </p>
+
+                    <p class="muted about-text">
+                        The festival combines practical
+                        workshops, technology talks,
+                        competitions and networking
+                        opportunities in one exciting
+                        experience.
+                    </p>
+
+                    <div class="notice">
+                        <strong>
+                            Everyone is welcome.
+                        </strong>
+
+                        Come with curiosity, learn something
+                        new and leave with something you
+                        built.
+                    </div>
+
+                </article>
+
             </div>
+
         </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="section" aria-labelledby="experience-title">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            THE EXPERIENCE
+                        </p>
+
+                        <h2 id="experience-title">
+                            More than an event.
+                        </h2>
+
+                    </div>
+
+                    <p class="muted">
+                        Learn, create and connect.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-3">
+
+                    <!-- Ideas -->
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h3>
+                            Ideas
+                        </h3>
+
+                        <p class="muted">
+                            Turn real-world problems into
+                            useful concepts, solutions and
+                            prototypes.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Skills -->
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h3>
+                            Skills
+                        </h3>
+
+                        <p class="muted">
+                            Develop practical technology
+                            skills through workshops,
+                            challenges and expert guidance.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Connections -->
+
+                    <article class="card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-handshake" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h3>
+                            Connections
+                        </h3>
+
+                        <p class="muted">
+                            Meet students, mentors and
+                            creators and grow your technology
+                            community.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MISSION ================= -->
+
+        <section class="section" aria-labelledby="mission-title">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        OUR MISSION
+                    </p>
+
+                    <h2 id="mission-title">
+                        Building a stronger student
+                        technology community.
+                    </h2>
+
+                    <p class="muted about-text">
+                        TechFest aims to create an environment
+                        where students can experiment with
+                        technology, share ideas, solve problems
+                        and learn from each other.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn btn-primary" href="register.html">
+
+                            Join TechFest
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                        <a class="btn btn-secondary" href="ticket.html">
+
+                            View Tickets
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer class="border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-5">
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
             <div>
-                <h2 class="text-2xl font-black text-cyan-400">TechFest26</h2>
-                <p class="text-slate-500 mt-2">Build. Learn. Connect. Innovate.</p>
+
+                <h2>
+                    TechFest26
+                </h2>
+
+                <p>
+                    Build. Learn. Connect. Innovate.
+                </p>
+
             </div>
-            <div class="text-slate-500 text-sm md:text-right">
-                <p>© 2026 TechFest. All rights reserved.</p>
-                <p class="mt-2">Jaipur, Rajasthan, India</p>
+
+            <div class="footer-right">
+
+                <p>
+                    &copy; 2026 TechFest.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Jaipur, Rajasthan, India
+                </p>
+
             </div>
+
         </div>
+
     </footer>
+
 </body>
 
 </html>

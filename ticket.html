@@ -1,81 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TechFest 2026 | Tickets</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Choose your TechFest 2026 ticket or pass. Student, Pro and Team passes available.">
+
+    <title>Tickets | TechFest 26</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/Responsive.css">
 </head>
 
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <header class="nav">
-        <div class="container nav-inner"><a class="logo" href="index.html">TECH<span>FEST</span> 26</a><label
-                class="menu mobile-only" for="nav"><i class="fa-solid fa-bars"></i></label><input id="nav"
-                class="mobile-toggle" type="checkbox" hidden>
-            <nav class="links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a class="active" href="ticket.html">Tickets</a>
-                <a href="venue.html">Venue</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="register.html">Register</a>
+
+        <div class="container nav-inner">
+
+            <a class="logo" href="index.html">
+                TECH<span>FEST</span> 26
+            </a>
+
+            <!-- Mobile Menu -->
+            <input class="mobile-toggle" id="nav" type="checkbox">
+
+            <label class="menu mobile-only" for="nav" aria-label="Open navigation menu">
+
+                <i class="fa-solid fa-bars" aria-hidden="true">
+                </i>
+
+            </label>
+
+            <!-- Navigation -->
+            <nav class="links mobile-nav" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="ticket.html" class="active" aria-current="page">
+                    Tickets
+                </a>
+
+                <a href="venue.html">
+                    Venue
+                </a>
+
+                <a href="sponsors.html">
+                    Sponsors
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
             </nav>
+
         </div>
+
     </header>
-    <section class="page-head">
-        <div class="container"><span class="eyebrow">CHOOSE YOUR PASS</span>
-            <h1>Simple tickets. More access.</h1>
-            <p class="muted">Pick the experience that fits your TechFest journey.</p>
-        </div>
-    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
     <main>
-        <section class="section">
-            <div class="container grid grid-3">
-                <article class="card ticket">
-                    <h3>Standard</h3>
-                    <div class="price">₹999</div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> All keynote sessions</li>
-                        <li><i class="fa-solid fa-check"></i> Expo access</li>
-                        <li><i class="fa-solid fa-check"></i> Community networking</li>
-                    </ul><a class="btn btn-secondary" style="margin-top:22px" href="register.html">Choose Standard</a>
-                </article>
-                <article class="card ticket popular"><span class="tag">POPULAR</span>
-                    <h3>VIP</h3>
-                    <div class="price">₹2,499</div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> Everything in Standard</li>
-                        <li><i class="fa-solid fa-check"></i> Priority seating</li>
-                        <li><i class="fa-solid fa-check"></i> VIP networking lounge</li>
-                    </ul><a class="btn btn-primary" style="margin-top:22px" href="register.html">Choose VIP</a>
-                </article>
-                <article class="card ticket">
-                    <h3>Pro</h3>
-                    <div class="price">₹4,999</div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> Everything in VIP</li>
-                        <li><i class="fa-solid fa-check"></i> Premium workshops</li>
-                        <li><i class="fa-solid fa-check"></i> Exclusive community access</li>
-                    </ul><a class="btn btn-secondary" style="margin-top:22px" href="register.html">Choose Pro</a>
-                </article>
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <header class="page-head">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    PASSES &amp; TICKETS
+                </p>
+
+                <h1>
+                    Choose your
+                    <span class="gradient">
+                        pass.
+                    </span>
+                </h1>
+
+                <p class="muted">
+                    Simple passes for every kind of
+                    TechFest participant.
+                </p>
+
             </div>
+
+        </header>
+
+
+        <!-- ================= TICKETS ================= -->
+
+        <section class="section" aria-labelledby="ticket-title">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            PRICING
+                        </p>
+
+                        <h2 id="ticket-title">
+                            Pick the right pass.
+                        </h2>
+
+                    </div>
+
+                    <p class="muted">
+                        All passes include festival access.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-3">
+
+                    <!-- ================= STUDENT ================= -->
+
+                    <article class="card ticket">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-user-graduate" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h2>
+                            Student
+                        </h2>
+
+                        <p class="price">
+                            ₹199
+                        </p>
+
+                        <p class="muted">
+                            Perfect for students who want
+                            to explore the festival.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Festival access
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Talks &amp; sessions
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Participation certificate
+                            </li>
+
+                        </ul>
+
+                        <a class="btn btn-secondary ticket-btn" href="register.html">
+
+                            Choose Student
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- ================= PRO ================= -->
+
+                    <article class="card ticket popular" aria-label="Popular ticket plan">
+
+                        <span class="tag">
+                            POPULAR
+                        </span>
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-rocket" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h2>
+                            Pro
+                        </h2>
+
+                        <p class="price">
+                            ₹399
+                        </p>
+
+                        <p class="muted">
+                            Best for participants who want
+                            the complete experience.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Everything in Student
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Workshop access
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Priority seating
+                            </li>
+
+                        </ul>
+
+                        <a class="btn btn-primary ticket-btn" href="register.html">
+
+                            Choose Pro
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- ================= TEAM ================= -->
+
+                    <article class="card ticket">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-people-group" aria-hidden="true">
+                            </i>
+
+                        </div>
+
+                        <h2>
+                            Team
+                        </h2>
+
+                        <p class="price">
+                            ₹899
+                        </p>
+
+                        <p class="muted">
+                            Great for teams ready to compete
+                            and build together.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Up to 4 participants
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Challenge entry
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true">
+                                </i>
+                                Team certificate
+                            </li>
+
+                        </ul>
+
+                        <a class="btn btn-secondary ticket-btn" href="register.html">
+
+                            Choose Team
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- ================= NOTE ================= -->
+
+        <section class="section" aria-labelledby="ticket-note-title">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        IMPORTANT
+                    </p>
+
+                    <h2 id="ticket-note-title">
+                        Before you register
+                    </h2>
+
+                    <p class="muted about-text">
+                        Select your preferred ticket and
+                        complete the registration form.
+                        Ticket confirmation details will be
+                        provided after registration.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn btn-primary" href="register.html">
+
+                            Register Now
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                        <a class="btn btn-secondary" href="venue.html">
+
+                            View Venue
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer class="border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-5">
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
             <div>
-                <h2 class="text-2xl font-black text-cyan-400">TechFest26</h2>
-                <p class="text-slate-500 mt-2">Build. Learn. Connect. Innovate.</p>
+
+                <h2>
+                    TechFest26
+                </h2>
+
+                <p>
+                    Build. Learn. Connect. Innovate.
+                </p>
+
             </div>
-            <div class="text-slate-500 text-sm md:text-right">
-                <p>© 2026 TechFest. All rights reserved.</p>
-                <p class="mt-2">Jaipur, Rajasthan, India</p>
+
+            <div class="footer-right">
+
+                <p>
+                    &copy; 2026 TechFest.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Jaipur, Rajasthan, India
+                </p>
+
             </div>
+
         </div>
+
     </footer>
+
 </body>
 
 </html>
